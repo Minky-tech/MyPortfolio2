@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width-device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet"href="style.css">
+    <link href='https:unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+</head>
+<body>
+
+    <header class="hearder">
+
+        <a href="#home" class="logo">
+            Thando<span>DeTech</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <button class="gradient-btn">Contact Me</button>
+    
+        
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>NM Ndhlovu</span></h1>
+            <h3>
+                I'm a <span>Data Analyst</span>
+            </h3>
+            <p> Welcome! I am a second-year student passinate
+                about the power of data. I am contantly learning new
+            skills to turn raw information into meaningful stories.
+        Join me as i explore,analyze,and grow in the exciting 
+          field of Data Analytics  </p>
+
+          <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="bx 
+                bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn">Hire</a>
+            <a href="#contact"
+            class="btn">Contact</a>
+
+        </div>
+        </div>
+        <div class="home-img">
+            <img src="photo.jpeg" alt="">
+        </div>
+
+
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="photo.jpeg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About<span>Me</span></h2>
+            <p> I am a motivated second year Computer Science and Mathematics
+                student with a strong passion for Data Analysis. I enjoy 
+                combining my tectical programming skills with a logical 
+                mathematical thinking to turn raw data into meaningful insights.
+                I am proficient in Python and SQL, and I am eager to grow my 
+                experience and contribute data driven decision making
+            </p>
+            <div id="moreContent" style="display: none;">
+            <h3>TECHNICAL SKILLS</h3>
+            <ul>
+                <li>Advanced SQL & Query Optimazation</li>
+                <li>Predictive Modeling & Statistical Analysis</li>
+                <li>Data Pipeline Development(ETL/ELT)</li>
+                <li>Business Intelligence strategy</li>
+                <li>Cloud data tools</li>
+                <li>Data Governance & Quality Assurance</li>
+            </ul>
+            </div>
+              <a href="javascript:void(0);" class="btn" id="readMoreBtn"
+             onclick="toggleContent()">Read More</a>
+             </div>
+</section> 
+
+<script>
+function toggleContent() {
+  var content = document.getElementById("moreContent");
+  var btn = document.getElementById("readMoreBtn");
+   if (content.style.display === "none") {
+    content.style.display = "block";
+    btn.innerHTML = "Read Less";
+  } else {
+    content.style.display = "none";
+    btn.innerHTML = "Read More";
+
+
+  }
+}
+</script>
+
+<section class="tools" id="tools">
+    <h2><span class="white-text">MY</span>
+    <span class="orange-text">TOOLS</span>
+ </h2>
+
+
+    <div id="content" style="display: block ;">
+        <div class="tools-gallery">
+
+            <img src="excel.jpeg" alt="">
+            <img src="c++.jpeg" alt="">
+            <img src="MySQL.jpeg" alt="">
+            <img src="Python.jpeg" alt="">
+            <img src="java.jpeg" alt="">
+
+        </div>
+    </div>
+</section>
+<section class="projects" id="projects">
+  <h2><span class="white-text">MY</span> <span class="orange-text">PROJECTS</span></h2>
+
+  <div class="project-list">
+    <div class="project-box">
+      <h3>Sales Data Analysis Report</h3>
+      
+      <img src="sales data.jpeg" alt="Sales Data Dashboard" class="project-img">
+
+      <p>Analyzed a dataset containing monthly sales figures to identify trends,
+         top-performing products, and revenue growth. Cleaned the data, created summary tables,
+          and visualized the results using charts to make the information easy to understand.</p>
+      
+      <p><strong>Tools Used:</strong> Microsoft Excel,MySQL,JAVA</p>
+    </div>
+
+    <div class="project-box">
+      <h3>Student Performance Analysis</h3>
+      
+      <img src="student data.jpeg" alt="Student Results Graph" class="project-img">
+
+      <p>Collected and organized student marks data to calculate averages 
+        and identify pass/fail rates. Used formulas to automate calculations 
+        and created graphs to show class performance distribution clearly.</p>
+      
+      <p><strong>Tools Used:</strong> Microsoft Excel,Python,MySQL</p>
+    </div>
+
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2><span class="white-text">CONTACT</span> <span class="orange-text">ME</span></h2>
+
+  <div class="contact-content">
+    <p>If you would like to work together or have any questions, feel free to reach out!</p>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> Thandominky@icloud.com</p>
+      <p><i class="fas fa-phone"></i> <strong>Phone:</strong>+2772 669 7090</p>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Mpumalanga, South Africa</p>
+    </div>
+
+    <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="bx 
+                bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+  </div>
+</section>
